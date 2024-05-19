@@ -19,13 +19,16 @@ import {
   import { FaLocationArrow } from "react-icons/fa";
   import { FaPhone } from "react-icons/fa6";
   import { FaWhatsapp } from "react-icons/fa";
+  import { FaInstagram } from "react-icons/fa";
+
 
 
 
 
 const Nav = () => {
     return(
-        <div className='flex w-full items-center realtive  top-0 left-0 right-0 px-4'>
+      <>
+      <div className='flex lg:hidden xl:hidden w-full items-center realtive  top-0 left-0 right-0 px-4'>
             <div className='w-[80%] p-3'>
                 <div className='w-[95%] bg-white flex rounded-3xl shadow-xl px-4 py-2 items-center'>
                 <MdLocationPin fontSize={24} />
@@ -82,6 +85,30 @@ const Nav = () => {
             </div>
             <div className="cirlce bg-[#234F68] bg-opacity-[0.5] h-[500px] absolute w-[500px] ml-[-60%] rounded-full z-[-1] left-0 top-0 mt-[-80%]"></div>
         </div>
+
+       <div className='hidden z-[100000] border-t-[#234F68] border-t-[20px] lg:flex  top-0 left-0 right-0 border-b-[1px] border-b-black  w-full bg-white items-center'>
+      <div className='w-[20%] p-4'>
+        <h1 className='text-[#234F68] text-3xl font-bold w-full text-center'>OLYMP</h1>
+      </div>
+      <div className='w-[60%] p-4 flex items-center justify-center gap-6 font-semibold text-xl'>
+        <Link href={'/'}>Home</Link>
+        <Link href={'/'}>Properties</Link>
+        <Link href={'/'}>Favorites</Link>
+        <Link href={'/'}>Lets Chat</Link>
+      </div>
+      <div className='w-[20%] gap-5 p-4 flex justify-end pr-[5%]'>
+        <a href="">
+          <FaInstagram fontSize={22} />
+        </a>
+        <a href="">
+          <MdEmail fontSize={22} />
+        </a>
+        
+        
+      </div>
+    </div>
+      </>
+        
     )
 }
 

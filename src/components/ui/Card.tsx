@@ -16,19 +16,19 @@ const Card: React.FC<CardProps> = ({ img }) => {
         <div className='absolute right-[10px]  bottom-[10px] px-4 py-2 bg-[#234F68] text-white font-semibold rounded-xl'>
           Apartment
         </div>
-        <img src={img} className='rounded-3xl ' alt='' />
+        <img src={img} className='rounded-3xl  lg:h-[400px] lg:w-full' alt='' />
       </div>
       <div>
-        <div className='py-1 text-[#234F68] font-semibold px-4 text-sm'>
+        <div className='py-1 lg:py-[5%] lg:text-2xl text-[#234F68] font-semibold px-4 text-sm'>
             Mill Sper House
         </div>
       </div>
-      <div className='flex items-center px-4'>
-                <div className='flex w-full items-center text-xs w-[50%]  gap-2'>
+      <div className='flex items-center px-4 lg:text-xl'>
+                <div className='flex lg:gap-2 w-full items-center lg:text-xl text-xs w-[50%]  gap-2'>
                 <FaStar  color='FFC42D' />
                 <p className='text-[#252B5C]  font-semibold'>4,9</p>
                 </div>
-        <div className='w-[50%] flex text-[#252B5C] items-center text-xs justify-start'>
+        <div className='w-[50%] lg:gap-2 flex text-[#252B5C] items-center lg:text-xl text-xs justify-start'>
                 <MdLocationPin fontSize={18} />
                 <p className='text-[#252B5C] font-semibold'>Plazh</p>
         </div>

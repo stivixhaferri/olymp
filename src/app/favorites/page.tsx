@@ -7,7 +7,7 @@ import Nav from '@/components/ui/Nav';
 const page = () => {
     return(
         <div className='pb-[15%]'>
-            <Nav/>
+            
             <div className='w-[90%] mx-auto my-4'>
                 <div className='w-full focus:outline-none px-4 py-2 rounded-xl shadow-lg bg-white flex items-center gap-1'>
                 <FaSearch />

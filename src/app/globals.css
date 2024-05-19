@@ -74,8 +74,12 @@
       @apply bg-background text-foreground;
     }
   }
+  @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Sans+Mono:ital,wght@0,400..700;1,400..700&family=Ubuntu:ital,wght@0,500;1,700&display=swap');
 
-
+  *{
+    font-family:sans-serif;
+    font-optical-sizing: auto;
+  }
   body{
     width: 100%;
     overflow-x: hidden;
@@ -84,7 +88,26 @@
 
 
 
+  ::-webkit-scrollbar {
+    width: 7px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
 
+  
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(0, 0, 0); 
+   
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #000000; 
+  }
 
   .swiper {
     width: 100%;
@@ -118,4 +141,35 @@ box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 backdrop-filter: blur(5px);
 -webkit-backdrop-filter: blur(5px);
 border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+
+@keyframes float {
+  0% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(-20px);
+  }
+  100% {
+      transform: translateY(0);
+  }
+}
+
+.floating {
+
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: float 7s ease-in-out infinite;
+}
+
+.floating2 {
+
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: float 5s ease-in-out infinite;
 }
